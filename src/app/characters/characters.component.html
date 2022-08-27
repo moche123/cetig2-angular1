@@ -1,0 +1,8 @@
+
+<h2 #title class="container">Listado de personajes de {{apiName}}</h2>
+
+<div class="container">
+    <section *ngFor="let item of characters$ | async">
+        <p>{{item.name}}</p>
+    </section>  
+</div>
